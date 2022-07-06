@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    min-height: 100vh;
+}
+// font sass
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+$font-family-serif:'Dancing Script', cursive, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+.container {
+    min-height: 100vh;
+    @extend .d-flex;
+}
+.card-sass {
+    @extend .position-absolute;
+    @extend .top-50;
+    @extend .start-50;
+    @extend .translate-middle;
+}
+.card {
+    @extend .bg-dark;
+    @extend .text-purple;
+    font-family: $font-family-serif;
+    
+    .btn {
+        @extend .bg-purple;
+        @extend .text-light;
+    }
+}
+
+// variables de color de Sass
+$color-letrita: #cf649a;
+$dark: #293133; 
+$white: #fff; 
+
+.card-text {
+    color: $white;
+}
+
+// Theme
+$theme-colors: (
+    "purple": $color-letrita,
+    "dark": $dark,
+    "light": $white
+)!default;
+
+// Bootstrap
+@import "bootstrap.scss"
